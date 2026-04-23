@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Administration UI</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>User Administration</h1>
+      <p class="hint">Reference UI for browser-based test automation (pytest + Selenium).</p>
+
+      <section class="card">
+        <h2>Login</h2>
+        <div class="row">
+          <label for="username">Username</label>
+          <input id="username" data-testid="username-input" value="alice" />
+        </div>
+        <div class="row">
+          <label for="password">Password</label>
+          <input id="password" data-testid="password-input" type="password" value="password123" />
+        </div>
+        <button id="login-btn" data-testid="login-btn">Login and Load Users</button>
+      </section>
+
+      <section class="card">
+        <h2>Users</h2>
+        <p id="status" data-testid="status-message">Not logged in</p>
+        <label class="checkbox-row">
+          <input type="checkbox" id="simulate-api-failure" data-testid="simulate-api-failure" />
+          Simulate API failure
+        </label>
+        <ul id="users-list" data-testid="users-list"></ul>
+      </section>
+
+      <section class="card">
+        <h2>Create User</h2>
+        <div class="row">
+          <label for="new-name">Name</label>
+          <input id="new-name" data-testid="new-name-input" />
+        </div>
+        <div class="row">
+          <label for="new-role">Role</label>
+          <input id="new-role" data-testid="new-role-input" />
+        </div>
+        <div class="row">
+          <label for="new-email">Email</label>
+          <input id="new-email" data-testid="new-email-input" />
+        </div>
+        <button id="create-user-btn" data-testid="create-user-btn">Create User</button>
+      </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>

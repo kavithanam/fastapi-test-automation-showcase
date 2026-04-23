@@ -1,0 +1,32 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Selenium / local test outputs
+ui_test_artifacts/
+
+# Environment / secrets (if you add them later)
+.env
+.env.*
+
+# macOS
+.DS_Store
+
+# Editors (optional but common)
+.idea/
+.vscode/
+
+# Logs
+*.log
